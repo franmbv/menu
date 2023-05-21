@@ -5,7 +5,7 @@ const menu = [
     title: "Green Curry",
     category: "curry",
     price: 6,
-    img: "url(https://franmbv.github.io/menu/images/menuImage4.webp)",
+    img: "url("https://franmbv.github.io/menu/images/menuImage4.webp")",
     desc: "Pollo en curry verde con leche de coco, brócoli y chauchas, acompañado con arroz al vapor.",
   },
   {

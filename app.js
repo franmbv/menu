@@ -42,7 +42,7 @@ const menu = [
   },
   {
     id: 6,
-    title: "Pad Thai con Pollo",
+    title: "Pad Thai with Pollo",
     category: "wok",
     price: 6,
     img: "images/menuImage6.webp",
@@ -50,7 +50,7 @@ const menu = [
   },
   {
     id: 7,
-    title: "Pad Thai con Langostinos",
+    title: "Pad Thai with Prawns",
     category: "wok",
     price: 6,
     img: "images/menuImage7.webp",
@@ -74,7 +74,7 @@ const menu = [
   },
   {
     id: 10,
-    title: "Ensalada de Arroz Al Vapor",
+    title: "Steamed Rice Salad",
     category: "salad",
     price: 4,
     img: "images/menuImage10.webp",
@@ -82,7 +82,7 @@ const menu = [
   },
   {
     id: 11,
-    title: "Coca-Cola Sabor Original 354 ml",
+    title: "Coca-Cola Original 354 ml",
     category: "beverage",
     price: 1.5,
     img: "images/menuImage11.png",
@@ -90,7 +90,7 @@ const menu = [
   },
   {
     id: 12,
-    title: "Sprite Sabor Limon 354 ml",
+    title: "Sprite Lemon 354 ml",
     category: "beverage",
     price: 1.5,
     img: "images/menuImage12.png",

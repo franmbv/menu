@@ -13,7 +13,7 @@ const menu = [
     title: "Pumpkin Curry",
     category: "curry",
     price: 5,
-    img: "/images/menuImage2.webp",
+    img: "images/menuImage2.webp",
     desc: "Calabaza y tofu en curry amarillo con leche de coco, zanahoria, espinaca, cebolla caramelizada, acompañado con arroz al vapor",
   },
   {

@@ -1,3 +1,6 @@
+const sectionItems = document.querySelector(".menu__items");
+const menuButtons = document.querySelector(".menu__buttons");
+
 // Items
 const menu = [
   {
@@ -98,9 +101,6 @@ const menu = [
   },
 ];
 
-const sectionCenter = document.querySelector(".section-center");
-const btnContainer = document.querySelector(".btn-container");
-
 //Load Items
 window.addEventListener("DOMContentLoaded", () => {
   displayMenuItems(menu);
@@ -113,21 +113,21 @@ const displayMenuItems = (menuItems) => {
   let displayMenu = menuItems
     .map((item) => {
       return `
-      <article class="menu-item">
-        <img src="${item.img}"  class="photo" alt="${item.title}">
-        <div class="item-info">
+      <article class="menu__items__item">
+        <img src="${item.img}"  class="menu__item-image" alt="${item.title}">
+        <div class="menu__item-info">
           <header>
             <h4>${item.title}</h4>
-            <h4 class="price">${formatCurrency(item.price)}</h4>
+            <h4 class="menu__item-price">${formatCurrency(item.price)}</h4>
           </header>
-          <p class="item-text">
+          <p class="menu__item-description">
                 ${item.desc}
             </p>
         </div>
     </article>`;
     })
     .join("");
-  sectionCenter.innerHTML = displayMenu;
+  sectionItems.innerHTML = displayMenu;
 };
 
 const displayMenuBtns = () => {
@@ -143,12 +143,12 @@ const displayMenuBtns = () => {
 
   const categoryBtns = categories
     .map((category) => {
-      return `<button class="filter-btn" type="button" data-id="${category}">${category}</button>`;
+      return `<button class="menu__button__buttons" type="button" data-id="${category}">${category}</button>`;
     })
     .join("");
-  btnContainer.innerHTML = categoryBtns;
+  menuButtons.innerHTML = categoryBtns;
 
-  const filterBtns = document.querySelectorAll(".filter-btn");
+  const filterBtns = document.querySelectorAll(".menu__button__buttons");
   filterBtns.forEach((btn) => {
     btn.addEventListener("click", (e) => {
       const category = e.currentTarget.dataset.id;
@@ -162,10 +162,10 @@ const displayMenuBtns = () => {
   });
 };
 
-const formatCurrency = (value) =>{
+const formatCurrency = (value) => {
   return value.toLocaleString("en-US", {
     style: "currency",
     currency: "USD",
     minimunFractionDigits: 2,
   });
-}
+};

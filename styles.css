@@ -126,12 +126,12 @@ Menu
   margin-left: auto;
   margin-right: auto;
 }
-.btn-container {
+.menu__buttons {
   margin-bottom: 4rem;
   display: flex;
   justify-content: center;
 }
-.filter-btn {
+.menu__button__buttons {
   background: transparent;
   border-color: var(--clr-gold);
   font-size: 1rem;
@@ -144,11 +144,11 @@ Menu
   cursor: pointer;
   transition: var(--transition);
 }
-.filter-btn:hover {
+.menu__button__buttons:hover {
   background: var(--clr-gold);
   color: var(--clr-white);
 }
-.section-center {
+.menu__items {
   width: 90vw;
   margin: 0 auto;
   max-width: 1170px;
@@ -156,29 +156,29 @@ Menu
   gap: 3rem 2rem;
   justify-items: center;
 }
-.menu-item {
+.menu__items__item {
   display: grid;
   gap: 1rem 2rem;
   max-width: 25rem;
 }
-.photo {
+.menu__item-image {
   object-fit: cover;
   height: 200px;
   border: 0.25rem solid var(--clr-gold);
   border-radius: var(--radius);
 }
-.item-info header {
+.menu__item-info header {
   display: flex;
   justify-content: space-between;
   border-bottom: 0.5px dotted var(--clr-grey-5);
 }
-.item-info h4 {
+.menu__item-info h4 {
   margin-bottom: 0.5rem;
 }
-.price {
+.menu__item-price {
   color: var(--clr-gold);
 }
-.item-text {
+.menu__item-description {
   margin-bottom: 0;
   padding-top: 1rem;
 }
@@ -186,21 +186,21 @@ Menu
 
 
 @media screen and (min-width: 768px) {
-  .menu-item {
+  .menu__items__item {
     grid-template-columns: 225px 1fr;
     gap: 0 1.25rem;
     max-width: 40rem;
   }
-  .photo {
+  .menu__item-image {
     height: 175px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .section-center {
+  .menu__items {
     width: 95vw;
     grid-template-columns: 1fr 1fr;
   }
-  .photo {
+  .menu__item-image {
     height: 150px;
   }
 }
@@ -222,7 +222,7 @@ Menu
     font-size: 2rem;
   }
 
-  .filter-btn{
+  .menu__button__buttons{
     font-size: 2rem;
   }
 }
